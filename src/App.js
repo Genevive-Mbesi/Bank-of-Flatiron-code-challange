@@ -15,18 +15,12 @@ const App = () => {
   }, []);
 
   const fetchTransactions = async () => {
-    try {
-      // Assuming "transactions.json" is the file containing your data
-      const response = await fetch("http://localhost:8001/transactions.json");
-      if (!response.ok) {
-        throw new Error("Network response was not ok");
-      }
-      const data = await response.json();
-      const transactionsWithIds = data.map((transaction) => ({ ...transaction, id: uuidv4() }));
-      setTransactions(transactionsWithIds);
-    } catch (error) {
-      console.error("Error fetching transactions:", error);
-    }
+    
+      
+      fetch("https://bank-of-flat-iron-app.onrender.com/transactions")
+      .then(resp => resp.json())
+      .then(transactions => setTransactions(transactions));
+    
   };
 
   const handleAddTransaction = (newTransaction) => {
