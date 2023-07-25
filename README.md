@@ -6,7 +6,7 @@ This is a mini web app built with React to practice components, props, state, ev
 - Add a new transaction by filling out and submitting the form. The new transaction will be added to the table (not persisted to the backend).
 - Filter transactions by typing into the search bar. Only transactions with a description matching the search term will be shown in the transactions table.
 - Sort transactions alphabetically by category or description.
-- Delete a transaction, which removes it from the table.
+
 
 ## Getting Started
 
@@ -62,7 +62,7 @@ Make sure you have the following software installed:
 2. To add a new transaction, fill out the form with the transaction details (description, category, and amount) and click the "Add Transaction" button. The new transaction will be added to the table.
 3. To filter transactions, type a keyword in the search bar, and the table will display only transactions with descriptions containing that keyword.
 4. To sort transactions alphabetically, click on the "Category" or "Description" column header.
-5. To delete a transaction, click the "Delete" button in the corresponding row of the table. The transaction will be removed from the table.
+
 
 ### Credits
 
